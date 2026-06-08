@@ -1,0 +1,81 @@
+.welcome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height: 656px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(220, 16%, 96%);
+    border: 1px solid black;
+}
+
+.container__banking {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__banking {
+    width: 472.8px;
+    height: 486.17px;
+    padding: 98px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description__banking h1 {
+    color: hsl(233, 26%, 24%);
+    font-size: 52px;
+    font-weight: 300;
+    text-align: start;
+    margin: 0px 0px 24px;
+}
+
+.description__banking p {
+    color: var(--textGray);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px 24px;
+}
+
+.description__banking button {
+    color: var(--textWhite);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: .3s ease-in-out;
+    border: 1px solid transparent;
+    background: linear-gradient(
+        to right,
+        var(--textBlue),
+        var(--textGreen)
+    );
+    box-shadow: 0 4px 10px rgba(49, 211, 92, 0.25);
+}
+
+.img__banking {
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: url(/src/assets/image/bg-intro-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img__banking img {
+    width: 764.64px;
+    height: 100%;
+    position: relative;
+    bottom: 176px;
+}
