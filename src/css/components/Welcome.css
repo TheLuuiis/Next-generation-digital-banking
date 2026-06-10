@@ -5,13 +5,13 @@
     height: 656px;
     justify-content: center;
     align-items: center;
-    background-color: hsl(220, 16%, 96%);
+    background-color: var(--backgroundWhite);
     border: 1px solid black;
 }
 
 .container__banking {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1240px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -75,7 +75,7 @@
 
 .img__banking img {
     width: 764.64px;
-    height: 100%;
+    height: auto;
     position: relative;
     bottom: 176px;
 }

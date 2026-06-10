@@ -5,12 +5,13 @@
     --fontFamily: "Be Vietnam Pro", sans-serif;
     --textWhite: hsl(0, 0%, 98%);
     --textGreen: hsl(136, 64%, 51%);
-    --textBlue: hsl(233, 26%, 24%);
+    --textBluee: hsl(233, 26%, 24%);
     --textBlue: hsl(192, 69%, 51%);
     --textGray: hsl(233, 8%, 62%);
     --textGrayWhite: hsl(220, 16%, 96%);
     --backgoundBlue: hsl(192, 69%, 51%);
     --backgroundWhite: hsl(0, 100%, 100%);
+    --backgroundGrayWhite: hsl(220, 16%, 96%);
     --backgroundBlack: hsl(0, 0%, 0%);
 }
 
@@ -26,7 +27,7 @@ body {
 
 .app {
     width: 100%;
-    height: 200dvh;
+    height: 400dvh;
     display: flex;
     justify-content: center;
     flex-direction: column;
