@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Welcome from './components/Welcome';
 import Choose from './components/Choose';
 import Articles from './components/Articles';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
       <main className='main'>
         <Welcome />
         <Choose />
-        <Articles/>
+        <Articles />
+        <Footer />
       </main>
     </div>
   )
