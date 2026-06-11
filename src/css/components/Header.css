@@ -1,21 +1,22 @@
 header {
     width: 100%;
-    height: auto;
-    padding: 30px;
     background-color: var(--backgroundWhite);
     position: sticky;
-    display: flex;
-    justify-content: center;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 1px 10px rgba(0,0,0,.04);
 }
 
 header nav {
     width: 100%;
-    max-width: 1240px;
-    height: 100%;
+    max-width: var(--container);
+    min-height: 90px;
+    margin: 0 auto;
+    padding-inline: 24px;
+
     display: flex;
-    padding: 0px 24px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 header nav img {
@@ -23,8 +24,9 @@ header nav img {
 }
 
 header nav ul {
-    gap: 30px;
     display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 header nav ul li {
@@ -33,31 +35,72 @@ header nav ul li {
 
 header nav ul li a {
     color: var(--textGray);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    text-align: center;
-    transition: .3s ease-in-out;
     text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+}
+
+header nav ul li a:hover {
+    color: var(--textBluee);
 }
 
 header nav button {
     color: var(--textWhite);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    text-align: center;
-    padding: 12px 35px;
-    border-radius: 20px;
+    padding: 14px 32px;
+    border-radius: 999px;
     cursor: pointer;
-    transition: .3s ease-in-out;
-    border: 1px solid transparent;
+    transition: var(--transition);
+
     background: linear-gradient(
         to right,
-        var(--textBlue),
-        var(--textGreen)
+        var(--textGreen),
+        var(--textBlue)
     );
-    box-shadow: 0 4px 10px rgba(49, 211, 92, 0.25);
 }
 
 header nav button:hover {
-     opacity: 0.8;
+    opacity: .85;
+}
+
+@media (max-width: 900px) {
+
+    header nav {
+        min-height: 80px;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    header nav button {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header nav {
+        justify-content: center;
+    }
+
+    header nav ul,
+    header nav button {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header nav {
+        min-height: 72px;
+        padding-inline: 16px;
+    }
+
+    header nav img {
+        width: 160px;
+    }
 }

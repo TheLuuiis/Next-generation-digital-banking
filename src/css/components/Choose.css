@@ -1,71 +1,113 @@
+/* =========================================
+   CHOOSE.CSS
+========================================= */
+
 .container__choose {
     width: 100%;
-    height: 670.38px;
-    display: flex;
-    padding: 60px 0px 60px 0px;
-    justify-content: center;
+    padding: 100px 0;
     background-color: var(--backgroundGrayWhite);
 }
 
 .choose {
     width: 100%;
-    max-width: 1240px;
-    height: 490px;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding-inline: 24px;
 }
 
 .description__choose {
-    width: 100%;
-    height: auto;
-    margin: 0px 0px 60px;
+    margin-bottom: 70px;
 }
 
 .description__choose h1 {
-    color: hsl(233, 26%, 24%);
-    font-size: 37px;
+    color: var(--textBluee);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 400;
-    text-align: start;
-    margin: 0px 0px 36px;
+    margin-bottom: 24px;
 }
 
 .description__choose p {
+    max-width: 650px;
+
     color: var(--textGray);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: start;
-    max-width: 600px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 .container__options {
-    gap: 30px;
-    width: 100%;
-    height: 298.98px;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
 }
 
 .card__option {
-    width: 265.5px;
-    height: 100%;
-    padding: 10px;
-    border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__option img {
-    margin: 0px 0px 44px;
+    width: 72px;
+    margin-bottom: 34px;
 }
 
 .card__option h2 {
-    color: hsl(233, 26%, 24%);
-    font-size: 24px;
+    color: var(--textBluee);
+    font-size: 1.5rem;
     font-weight: 400;
-    text-align: start;
-    margin: 0px 0px 24px;
+    margin-bottom: 24px;
 }
 
 .card__option p {
     color: var(--textGray);
-    font-size: 14px;
-    font-weight: 300;
-    text-align: start;
+    line-height: 1.8;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .container__options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container__choose {
+        padding: 80px 0;
+    }
+
+    .description__choose {
+        text-align: center;
+    }
+
+    .description__choose p {
+        margin: 0 auto;
+    }
+
+    .container__options {
+        grid-template-columns: 1fr;
+    }
+
+    .card__option {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .description__choose h1 {
+        font-size: 2rem;
+    }
+
+    .card__option h2 {
+        font-size: 1.3rem;
+    }
+
+    .card__option p {
+        font-size: .95rem;
+    }
 }
